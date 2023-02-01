@@ -3,7 +3,7 @@ const TicketRepository = require("../repository/ticket-repository");
 
 const repo = new TicketRepository();
 
-const sendBasicEmail = async (mailFrom, mailTo, mailSubject, mailBody) => {
+const sendBasicEmail = async ({ mailFrom, mailTo, mailSubject, mailBody }) => {
   sender.sendMail({
     from: mailFrom,
     to: mailTo,
